@@ -9,7 +9,7 @@
     <description>Common classes for inbound and outbound REST endpoints based on Java EE standards (like JAX-RS)</description>
     <properties>
         <!-- new Maven version management -->
-        <revision>0.8.0</revision>
+        <revision>0.9.0</revision>
         <sha1></sha1>
         <changelist></changelist>
         <!-- common properties -->
@@ -224,6 +224,20 @@
                         <phase>clean</phase>
                         <goals>
                             <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- create Jandex index for Quarkus CDI scanning -->
+            <plugin>
+                <groupId>org.jboss.jandex</groupId>
+                <artifactId>jandex-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <executions>
+                    <execution>
+                        <id>make-index</id>
+                        <goals>
+                            <goal>jandex</goal>
                         </goals>
                     </execution>
                 </executions>

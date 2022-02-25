@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.9.0] - 2022-02-25
+### Added
+- added Jandex index to JAR to simplify Quarkus CDI scanning
+### Changed
+
 ## [0.8.0] - 2022-02-25
 ### Added
 - first revision
